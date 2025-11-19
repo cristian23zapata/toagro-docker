@@ -23,8 +23,6 @@ package-lock.json
 /bootstrap/cache/*.php
 
 # Environment & Config
-.env
-.env.*
 !.env.example
 /auth.json
 
