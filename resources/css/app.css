@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*
+ * Custom styling overrides for a relaxing and professional food logistics theme.
+ *
+ * The default palette used throughout the application leaned heavily on blue
+ * accents. To evoke a more natural and calming feel appropriate for a food
+ * logistics platform, we override the primary blue tones with soothing
+ * greens. Additionally, we set a light mint background on the body to
+ * provide a soft backdrop for content.
+ */
+
+/* Light mint background for the entire page */
+body {
+    background-color: #f5fdf7;
+}
+
+/* Replace blue accent backgrounds with green shades */
+.bg-blue-500,
+.bg-blue-600,
+.bg-blue-700 {
+    background-color: #38a169 !important; /* medium green */
+}
+
+/* Darker green on hover for primary buttons */
+.hover\:bg-blue-500:hover,
+.hover\:bg-blue-600:hover,
+.hover\:bg-blue-700:hover {
+    background-color: #2f855a !important;
+}
+
+/* Adjust primary text colors from blue to green */
+.text-blue-500,
+.text-blue-600,
+.text-blue-700 {
+    color: #2f855a !important;
+}
+
+/* Darker text color on hover */
+.hover\:text-blue-500:hover,
+.hover\:text-blue-600:hover,
+.hover\:text-blue-700:hover {
+    color: #276749 !important;
+}
+
+/*
+ * Additional overrides for a cohesive food logistics aesthetic.
+ * We soften default gray backgrounds/borders to subtle greens and off‑whites
+ * and style the navigation bar with a calming teal. These changes are
+ * global so individual Blade views do not need to be manually updated.
+ */
+
+/* Soften light gray backgrounds */
+.bg-gray-50 {
+    background-color: #f0f8f5 !important;
+}
+
+.bg-gray-100 {
+    background-color: #eef9f3 !important;
+}
+
+/* Adjust gray borders to a muted green tone */
+.border-gray-100 {
+    border-color: #d3eadb !important;
+}
+
+.border-gray-200 {
+    border-color: #c2e3d1 !important;
+}
+
+/* Style the primary navigation bar */
+nav.bg-white {
+    background-color: #2c7a7b !important; /* deep teal */
+    border-color: #276b6b !important;
+}
+
+/* Ensure text within the navigation bar is white for contrast */
+nav.bg-white a,
+nav.bg-white .text-gray-500,
+nav.bg-white .text-gray-600,
+nav.bg-white .text-gray-700 {
+    color: #ffffff !important;
+}
+
+/* Set dropdown background within nav to a slightly lighter teal */
+nav.bg-white .bg-white {
+    background-color: #3b8c8d !important;
+}
